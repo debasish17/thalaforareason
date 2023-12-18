@@ -12,7 +12,7 @@ function App() {
   const playVideo = () => {
     // Check if the input string length is 7
     if (inputString.length === 7) {
-      alert('thala for a reason.');
+      alert('Thala for a reason.');
   
   
       const videoUrl = thala
