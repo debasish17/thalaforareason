@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import './App.css'; // Import Tailwind CSS
 import thala from "./thala.mp4"
+import ghantekaking from "./ghantekaking.mp4"
+import wcwin from "./wcwin.mp4"
+import sapnatoota from "./sapnatoota.mp4"
+import naughty from "./naughty.mp4"
 
 function App() {
   const [inputString, setInputString] = useState('');
@@ -11,9 +15,7 @@ function App() {
 
   const playVideo = () => {
     // Check if the input string length is 7
-    if (inputString.length === 7) {
-      alert('Thala for a reason.');
-  
+    if (inputString.length === 7 || inputString === "7") {   
   
       const videoUrl = thala
       const videoPlayer = document.getElementById('videoPlayer');
@@ -22,8 +24,45 @@ function App() {
       videoPlayer.src = videoUrl;
       videoPlayer.style.display = 'block'; // Show the video player
       videoPlayer.play();
-    } else {
-      alert('Please enter the string of length 7 .');
+    }
+    else if (inputString.length === 4) {   
+  
+      const videoUrl = wcwin
+      const videoPlayer = document.getElementById('videoPlayer');
+  
+      // Set the source and play the video
+      videoPlayer.src = videoUrl;
+      videoPlayer.style.display = 'block'; // Show the video player
+      videoPlayer.play();
+    }
+     else if (inputString.length === 5) {   
+  
+      const videoUrl = ghantekaking
+      const videoPlayer = document.getElementById('videoPlayer');
+  
+      // Set the source and play the video
+      videoPlayer.src = videoUrl;
+      videoPlayer.style.display = 'block'; // Show the video player
+      videoPlayer.play();
+    }
+    else if (inputString.length === 9 ) {  
+  
+      const videoUrl = sapnatoota
+      const videoPlayer = document.getElementById('videoPlayer');
+  
+      // Set the source and play the video
+      videoPlayer.src = videoUrl;
+      videoPlayer.style.display = 'block'; // Show the video player
+      videoPlayer.play();
+    }
+     else {
+      const videoUrl = naughty
+      const videoPlayer = document.getElementById('videoPlayer');
+  
+      // Set the source and play the video
+      videoPlayer.src = videoUrl;
+      videoPlayer.style.display = 'block'; // Show the video player
+      videoPlayer.play();
     }
   };
   
@@ -33,7 +72,7 @@ function App() {
       <div className="flex flex-col items-center justify-center min-h-screen bg-[#FFFF00]">
         <div className="mb-4">
           <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="inputString">
-            Enter a string:
+            Thala For a Reason
           </label>
           <input
             className="shadow appearance-none border rounded w-64 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
